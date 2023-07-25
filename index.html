@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator | Swapnil Gupta</title>
+  </head>
+  <body>
+    <div class="watermark-container">
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" />
+        <div>
+          <button class="button operator" onclick="clearDisplay()">AC</button>
+          <button class="button operator" onclick="deleteLastChar()">DEL</button>
+          <button class="button operator" onclick="insertCharacter('%')">%</button>
+          <button class="button operator" onclick="insertCharacter('/')">/</button>
+        </div>
+        <div>
+          <button class="button" onclick="insertCharacter('7')">7</button>
+          <button class="button" onclick="insertCharacter('8')">8</button>
+          <button class="button" onclick="insertCharacter('9')">9</button>
+          <button class="button operator" onclick="insertCharacter('*')">*</button>
+        </div>
+        <div>
+          <button class="button" onclick="insertCharacter('4')">4</button>
+          <button class="button" onclick="insertCharacter('5')">5</button>
+          <button class="button" onclick="insertCharacter('6')">6</button>
+          <button class="button operator" onclick="insertCharacter('-')">-</button>
+        </div>
+        <div>
+          <button class="button" onclick="insertCharacter('1')">1</button>
+          <button class="button" onclick="insertCharacter('2')">2</button>
+          <button class="button" onclick="insertCharacter('3')">3</button>
+          <button class="button operator" onclick="insertCharacter('+')">+</button>
+        </div>
+        <div>
+          <button class="button" onclick="insertCharacter('00')">00</button>
+          <button class="button" onclick="insertCharacter('0')">0</button>
+          <button class="button" onclick="insertCharacter('.')">.</button>
+          <button class="button equalBtn" onclick="calculate()">=</button>
+        </div>
+        <div>
+            <button class="button convert" onclick="convertToMeters()"><sup>cm</sup>m</button>
+            <button class="button convert" onclick="convertToFeet()"><sup>m</sup>ft</button>
+            <button class="button convert" onclick="convertToFtMeters()"><sup>ft</sup>m</button>
+            <button class="button historyBtn" onclick="showHistory()">⌛</button>
+        </div>
+        <div>
+            <button class="button currency" onclick="convertToDollars()">$</button>
+            <button class="button currency" onclick="convertToEuros()">€</button>
+            <button class="button currency" onclick="convertToPounds() ">£</button>
+            <button class="button currency" onclick="convertToYen()">¥</button>
+        </div>
+        <div class="bottom">
+            <br><a href="https://github.com/swapnilguptaatgit">
+            <p>&copy; 2023 Swapnil Gupta | All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
